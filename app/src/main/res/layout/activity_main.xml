@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="@drawable/green2"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainContainer"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:id="@+id/addressContainer"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/addressText"
+                android:textSize="24sp"
+                android:text="Location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:id="@+id/update_at"
+                android:textSize="14sp"
+                android:text="Updated at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/overViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="316dp"
+            android:layout_marginBottom="185dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Clean Sky"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:text="24° C"
+                android:textSize="90sp">
+
+            </TextView>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+              <TextView
+                  android:id="@+id/temp_min"
+                  android:text="Min temp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+              </TextView>
+                <Space
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content">
+                </Space>
+                <TextView
+                    android:id="@+id/temp_max"
+                    android:text="Max temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_alignParentBottom="true">
+       <LinearLayout
+           android:orientation="horizontal"
+           android:weightSum="3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="#3C101010"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:padding="8dp">
+
+               <ImageView
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/dom"
+                   android:tint="#FFF"></ImageView>
+
+               <Space
+                   android:layout_width="5dp"
+                   android:layout_height="wrap_content"></Space>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="sunrise"
+                   android:textSize="12sp">
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/hour"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="5:30 am"
+                   android:textSize="14sp">
+
+               </TextView>
+
+           </LinearLayout>
+           <Space
+               android:layout_width="10dp"
+               android:layout_height="wrap_content">
+
+           </Space>
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="#3C101010"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:padding="8dp">
+
+               <ImageView
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/dom"
+                   android:tint="#FFF"></ImageView>
+
+               <Space
+                   android:layout_width="5dp"
+                   android:layout_height="wrap_content"></Space>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="sunrise"
+                   android:textSize="12sp">
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/hour"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="5:30 am"
+                   android:textSize="14sp">
+
+               </TextView>
+
+           </LinearLayout>
+           <Space
+               android:layout_width="10dp"
+               android:layout_height="wrap_content">
+
+           </Space>
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="#3C101010"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:padding="8dp">
+
+               <ImageView
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/dom"
+                   android:tint="#FFF"></ImageView>
+
+               <Space
+                   android:layout_width="5dp"
+                   android:layout_height="wrap_content"></Space>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="sunrise"
+                   android:textSize="12sp">
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/hour"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="5:30 am"
+                   android:textSize="14sp">
+
+               </TextView>
+
+           </LinearLayout>
+           <Space
+               android:layout_width="10dp"
+               android:layout_height="wrap_content">
+
+           </Space>
+       </LinearLayout>
+       <Space
+           android:layout_width="wrap_content"
+           android:layout_height="10dp">
+       </Space>
+       <LinearLayout
+           android:orientation="horizontal"
+           android:weightSum="3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="#3C101010"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:padding="8dp">
+
+               <ImageView
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/dom"
+                   android:tint="#FFF"></ImageView>
+
+               <Space
+                   android:layout_width="5dp"
+                   android:layout_height="wrap_content"></Space>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="sunrise"
+                   android:textSize="12sp">
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/hour"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="5:30 am"
+                   android:textSize="14sp">
+
+               </TextView>
+
+           </LinearLayout>
+           <Space
+               android:layout_width="10dp"
+               android:layout_height="wrap_content">
+
+           </Space>
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="#3C101010"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:padding="8dp">
+
+               <ImageView
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/dom"
+                   android:tint="#FFF"></ImageView>
+
+               <Space
+                   android:layout_width="5dp"
+                   android:layout_height="wrap_content"></Space>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="sunrise"
+                   android:textSize="12sp">
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/hour"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="5:30 am"
+                   android:textSize="14sp">
+
+               </TextView>
+
+           </LinearLayout>
+           <Space
+               android:layout_width="10dp"
+               android:layout_height="wrap_content">
+
+           </Space>
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="#3C101010"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:padding="8dp">
+
+               <ImageView
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:src="@drawable/dom"
+                   android:tint="#FFF"></ImageView>
+
+               <Space
+                   android:layout_width="5dp"
+                   android:layout_height="wrap_content"></Space>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="sunrise"
+                   android:textSize="12sp">
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/hour"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="5:30 am"
+                   android:textSize="14sp">
+
+               </TextView>
+
+           </LinearLayout>
+           <Space
+               android:layout_width="10dp"
+               android:layout_height="wrap_content">
+
+           </Space>
+       </LinearLayout>
+
+   </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
